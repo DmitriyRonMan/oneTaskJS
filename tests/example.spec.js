@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('Registration test', async ({ page }) => {
   await page.goto('https://realworld.qa.guru/');
   await page.getByRole('link', { name: 'Sign up' }).click();
   await page.getByPlaceholder('Your Name').click();
